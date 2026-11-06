@@ -1,0 +1,21 @@
+[project]
+name = "fastapi-cms"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "devpdhana", email = "devpdhanasekar@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.142.4",
+    "psycopg[binary]>=3.3.8",
+    "sqlalchemy>=2.1.6",
+]
+
+[project.scripts]
+fastapi-cms = "fastapi_cms:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
